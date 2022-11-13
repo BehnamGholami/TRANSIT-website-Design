@@ -1,0 +1,335 @@
+/*adding font awesome*/
+@import url(all.css);
+
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+/*General Style*/
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Raleway";
+  color: #444;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Helvetica;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+/*style the logo type and top menu*/
+.header h1 {
+  float: left;
+}
+
+.nav {
+  text-align: right;
+}
+
+.nav ul li {
+  display: inline;
+  padding: 0 15px;
+}
+
+.nav ul li a {
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.2s ease-in-out;
+}
+
+.nav ul li a:hover {
+  color: #ffffff;
+}
+
+.top-menu {
+  padding: 40px;
+}
+
+.header {
+  background-image: url(../images/dark_tint.png),
+    url(../images/bokeh_car_lights_bg.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+/*style all button at once!*/
+.btn {
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 0;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "Raleway";
+}
+.btn-gray {
+  background-color: #fff;
+  color: #444 !important;
+}
+.btn-blue {
+  background-color: #3cadd4;
+  color: #fff !important;
+}
+.btn-dark {
+  background-color: #383b43;
+  color: #fff !important;
+}
+.btn-big {
+  font-size: 20px !important;
+  padding: 17px 35px;
+}
+
+/*style the banner content. this section include the header and 1 Paragraph and button*/
+
+.banner-content {
+  text-align: center;
+  color: #fff;
+  padding: 130px 0;
+}
+
+.banner-content h2 {
+  font-size: 60px;
+  line-height: 130px;
+}
+.banner-content p {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+/*-------------------*/
+/*style the main - this section include content of services and about our team and contact us form! */
+.services {
+  background-color: #f5f5f5;
+  border-bottom: 1px solid rgba(144, 144, 144, 0.25);
+  border-top: 1px solid rgba(144, 144, 144, 0.25);
+  padding: 100px 0;
+  text-align: center;
+}
+
+.services-header {
+  margin-bottom: 50px;
+}
+
+.services-header h2 {
+  font-size: 40px;
+  color: #474747;
+  margin-bottom: 10px;
+}
+.services-header p {
+  font-size: 20px;
+  color: #858585;
+}
+
+/*adding font awesome*/
+.icon::before {
+  font-family: FontAwesome;
+  font-style: normal;
+}
+/*set the color of icons*/
+.color-blue {
+  background-color: #3cadd4;
+  color: #ffffff;
+}
+.color-green {
+  background-color: #3dd43c;
+  color: #ffffff;
+}
+.color-red {
+  background-color: #d43c61;
+  color: #ffffff;
+}
+/*make them big and give space to icon from their border*/
+.big {
+  font-size: 30px;
+  padding: 35px 50px;
+}
+/*make a circle icon*/
+.rounded {
+  border-radius: 100%;
+}
+/*style the box!*/
+.services-content > * {
+  float: left;
+}
+.box {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 70px 30px;
+  border: 1px solid rgba(144, 144, 144, 0.25);
+  margin: 0 10px;
+  width: calc(calc(100% / 3) - 82px);
+}
+
+/*using clear fix to solve the float problem in background*/
+.services-content::before,
+.services-content::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.box h3 {
+  color: #858585;
+  font-size: 20px;
+  margin: 60px 0 30px 0;
+  line-height: 20px;
+}
+/*align the box in center*/
+.services-content {
+  width: 85%;
+  margin: 0 auto;
+}
+/*we have a service section! so i  decide to responsive this shit :)) */
+@media only screen and (max-width: 960px) {
+  .box {
+    width: 100%;
+    padding: 60px 0;
+    margin: 10px 0;
+  }
+}
+
+/*------style the about------*/
+.about {
+  text-align: center;
+  padding: 100px 0;
+}
+.about-header h2 {
+  font-size: 40px;
+  color: #474747;
+  margin-bottom: 10px;
+}
+.about-header p {
+  font-size: 20px;
+  color: #858585;
+}
+
+/*about content - profile images*/
+.about-content {
+  border-top: 1px solid rgba(144, 144, 144, 0.25);
+  border-bottom: 1px solid rgba(144, 144, 144, 0.25);
+  margin: 60px auto;
+  padding: 60px;
+  width: 90%;
+}
+.about-content > * {
+  float: left;
+}
+.about-content::before,
+.about-content::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.profile {
+  width: 25%;
+  margin-bottom: 60px;
+}
+
+.profile img {
+  float: left;
+  border-radius: 50%;
+  margin-left: 15%;
+}
+
+.profile h4 {
+  margin-top: 20px;
+}
+
+.profile p {
+  line-height: 25px;
+}
+
+@media only screen and (max-width: 960px) {
+  .profile {
+    width: 100%;
+  }
+}
+
+.about-footer {
+  width: 65%;
+  margin: 0 auto;
+}
+.about-footer p {
+  line-height: 25px;
+  font-size: 17px;
+  margin-bottom: 50px;
+}
+
+/*contact section*/
+.contact {
+  background-color: #3cadd4;
+  color: #fff;
+  padding: 100px 0;
+}
+.contact-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.contact-header h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.contact-header p {
+  font-size: 20px;
+}
+
+.contact-content {
+  text-align: center;
+}
+/*style the inputs in the contact form*/
+input[type="text"],
+input[type="email"] {
+  background-color: #fff;
+  color: #444;
+  border: 0;
+  border-radius: 4px;
+  padding: 15px 12px;
+  width: 25%;
+}
+
+textarea {
+  background-color: #fff;
+  color: #444;
+  border: 0;
+  /*using height because we dont*/
+  height: 200px;
+  border-radius: 4px;
+  padding: 15px 25px;
+  width: 50%;
+  margin-top: 20px;
+}
+.contact-content button {
+  margin-top: 20px;
+}
+
+::placeholder {
+  color: #858585 !important;
+  font-size: 15px;
+  font-family: "Raleway";
+}
+
+
+/*style the footer*/
+.footer{
+  padding: 100px 0;
+  background-color: #383b43;
+  text-align: center;
+}
+
+.footer p{
+  color: #fff;
+  /* padding: 0 20px;
+  width: 80%;
+  marg */
+}
