@@ -50,6 +50,23 @@ a {
   color: #ffffff;
 }
 
+.burger-menu {
+  float: right;
+  display: none;
+  margin-top: 15px;
+  border: none;
+  background: none;
+  color: #fff;
+  
+}
+@media (max-width: 650px) {
+  .nav {
+    display: none;
+  }
+  .burger-menu {
+    display: inline-block;
+  }
+}
 .top-menu {
   padding: 40px;
 }
@@ -319,15 +336,14 @@ textarea {
   font-family: "Raleway";
 }
 
-
 /*style the footer*/
-.footer{
+.footer {
   padding: 100px 0;
   background-color: #383b43;
   text-align: center;
 }
 
-.footer p{
+.footer p {
   color: #fff;
   /* padding: 0 20px;
   width: 80%;
